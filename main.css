@@ -22,8 +22,8 @@ html {
   /*
   margin: 0px;
   padding: 0px;
-  overflow-x: hidden;
   */
+  overflow-x: hidden;
 }
 
 body {
@@ -97,13 +97,19 @@ nav a:hover::before {
   width: 100%;
 }
 
-/*
 .transition-fade {
-  transition: 0.4s;
   opacity: 1;
+  transition: 500ms;
+  transform: translateX(0);
+  transform-origin: left;
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+  opacity: 1;
+  transform: translateX(100%);
 }
-*/
+
+html.is-leaving .transition-fade {
+  opacity: 0;
+  transform: translateX(0);
+}
