@@ -7,6 +7,7 @@
     <title>Projects</title>
   </head>
   <link rel="stylesheet" type="text/css" href="main.css">
+  <link rel="stylesheet" href="all.min.css">
   <header>
     <div class="container">
         <h1 class="logo"></h1>
@@ -23,8 +24,16 @@
   <body>
     <main id="swup" class="transition-fade">
       <div class="main-content">
+        <div class="sub-navabr">
+          <a id="show" onclick="showFunc()">All</a>
+          <a id="hide" onclick="hideFunc()">JavaScript</a>
+          <a id="hide" onclick="hideFunc()">C#</a>
+          <a id="show" onclick="showFunc()">Java</a>
+          <a id="show" onclick="showFunc()">Python</a>
+          <a id="show" onclick="showFunc()">C</a>
+        </div>
         <div class="portfolio">
-          <div class="portfolio-item medium">one</div>
+          <div class="portfolio-item medium" id="test1" onclick="togglePopup()">one</div>
           <div class="portfolio-item large two">two</div>
           <div class="portfolio-item medium">three</div>
           <div class="portfolio-item small">four</div>
@@ -33,5 +42,14 @@
         </div>
       </div>
     </main>
+    <div class="popup" id="popup-1">
+      <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="togglePopup()">×</div>
+          <h3>Title</h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo aspernatur laborum rem sed laudantium excepturi veritatis voluptatum architecto, dolore quaerat totam officiis nisi animi accusantium alias inventore nulla atque debitis.</p>
+          <a target="_blank" href="https://github.com/koookee/koookee.github.io"><i class="fab fa-github fa-2x" style="color:black"></i></a>
+        </div>
+    </div>
   </body>
 </html>
