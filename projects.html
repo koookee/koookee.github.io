@@ -25,20 +25,23 @@
     <main id="swup" class="transition-fade">
       <div class="main-content">
         <div class="sub-navabr">
-          <a id="show" onclick="showFunc()">All</a>
-          <a id="hide" onclick="hideFunc()">JavaScript</a>
-          <a id="hide" onclick="hideFunc()">C#</a>
-          <a id="show" onclick="showFunc()">Java</a>
-          <a id="show" onclick="showFunc()">Python</a>
-          <a id="show" onclick="showFunc()">C</a>
+          <a id="AllFilter" class="LanguageFilter" onclick="selectFilter(this.id)">All</a>
+          <a id="JavaScriptFilter" class="LanguageFilter" onclick="selectFilter(this.id)">JavaScript</a>
+          <a id="C#Filter" class="LanguageFilter" onclick="selectFilter(this.id)">C#</a>
+          <a id="JavaFilter" class="LanguageFilter" onclick="selectFilter(this.id)">Java</a>
+          <a id="PythonFilter" class="LanguageFilter" onclick="selectFilter(this.id)">Python</a>
+          <a id="CFilter" class="LanguageFilter" onclick="selectFilter(this.id)">C</a>
         </div>
         <div class="portfolio">
-          <div class="portfolio-item medium" id="test1" onclick="togglePopup()">one</div>
-          <div class="portfolio-item large two">two</div>
-          <div class="portfolio-item medium">three</div>
-          <div class="portfolio-item small">four</div>
-          <div class="portfolio-item tall">five</div>
-          <div class="portfolio-item wide">six</div>
+          <div class="portfolio-item medium" id="getStore" onclick="togglePopup()">Grocery Store</div>
+          <div class="portfolio-item large" id="Pomodoro">Pomodoro Timer</div>
+          <div class="portfolio-item medium" id="PythonImageFilter">Image Filter</div>
+          <div class="portfolio-item small" id="Calculator">Calculator</div>
+          <div class="portfolio-item tall" id="DefendThePortal">Defend the Portal</div>
+          <div class="portfolio-item wide" id="RandomQuoteGenerator">Random Quote Generator</div>
+          <div class="portfolio-item tall" id="MarkdownPreviewer">Markdown Previewer</div>
+          <div class="portfolio-item wide" id="FlappyChicken">Flappy Chicken</div>
+          <div class="portfolio-item small" id="DrumMachine">Drum Machine</div>
         </div>
       </div>
     </main>

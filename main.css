@@ -142,26 +142,23 @@ html.is-leaving .transition-fade {
   border-color: #66FCF1;
 }
 
-#show {
+.LanguageFilter {
   cursor: pointer;
-  color: #66FCF1;
+  color: #C5C6C7;  
   padding-right: 0.5em;
   margin-bottom: -1em;
   font-size: 1.5em;
 }
 
-#hide {
-  cursor: pointer;
-  color: #C5C6C7;
-  padding-right: 0.5em;
-  font-size: 1.5em;
+#AllFilter {
+  color: #66FCF1;
 }
 
 .portfolio {
   padding-top: 0.2em;
   display: grid;
   height: 100%;
-  grid-template-rows: repeat(8, 5em);
+  grid-template-rows: repeat(10, 5em);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
 }
@@ -214,9 +211,46 @@ html.is-leaving .transition-fade {
   cursor: pointer;
 }
 
+#getStore{
+  background-image: url(Images/getStore.jpg);
+  background-size: 16em 16em;
+}
 
-.portfolio-item {
-  background-image: url(//unsplash.it/800/600);   /* Temporary place holder image */
+#Pomodoro{
+  background-image: url(Images/Pomodoro.jpg);
+}
+
+#PythonImageFilter{
+  background-image: url(Images/PythonImageFilter.png);
+  background-position: right;
+}
+
+#Calculator{
+  background-image: url(Images/Calculator.jpg);
+  background-position: right;
+}
+
+#DefendThePortal{
+  background-image: url(Images/DefendThePortal.jpg);
+  background-position: center;
+}
+
+#RandomQuoteGenerator{
+  background-image: url(Images/RandomQuoteGenerator.jpg);
+}
+
+#MarkdownPreviewer{
+  background-image: url(Images/MarkdownPreviewer.jpg);
+  background-position: 10% 0%;
+}
+
+#FlappyChicken{
+  background-image: url(Images/FlappyChicken.jpg);
+  background-position: top;
+}
+
+#DrumMachine{
+  background-image: url(Images/DrumMachine.jpg);
 }
 
 .portfolio-item:hover::before {
