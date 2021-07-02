@@ -144,13 +144,13 @@ html.is-leaving .transition-fade {
 
 .LanguageFilter {
   cursor: pointer;
-  color: #C5C6C7;  
+  color: #C5C6C7;
   padding-right: 0.5em;
   margin-bottom: -1em;
   font-size: 1.5em;
 }
 
-#AllFilter {
+#All {
   color: #66FCF1;
 }
 
