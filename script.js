@@ -1,6 +1,17 @@
 const swup = new Swup()
 const hasRefreshOnce = false;
 const filterIDs = ["All", "JavaScript", "C#", "Java", "Python", "C"];
+const popupDictionary = {
+  "getStore" : "popup-0",
+  "Pomodoro" : "popup-1",
+  "PythonImageFilter" : "popup-2",
+  "Calculator" : "popup-3",
+  "DefendThePortal" : "popup-4",
+  "RandomQuoteGenerator" : "popup-5",
+  "MarkdownPreviewer" : "popup-6",
+  "RoboChicken" : "popup-7",
+  "DrumMachine" : "popup-8"
+}
 
 // Project filter by programming language
 function selectFilter(filterID){
@@ -43,8 +54,8 @@ function hideFunc(name){
 }
 
 // Project pop ups
-function togglePopup(){
-  document.getElementById("popup-1").classList.toggle("active");
+function togglePopup(name){
+  document.getElementById(popupDictionary[name]).classList.toggle("active");
 }
 
 // Refreshes the page so that pop ups can work. For some reason, going from 'home' to 'projects'

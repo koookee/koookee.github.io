@@ -244,8 +244,8 @@ html.is-leaving .transition-fade {
   background-position: 10% 0%;
 }
 
-#FlappyChicken{
-  background-image: url(Images/FlappyChicken.jpg);
+#RoboChicken{
+  background-image: url(Images/RoboChicken.jpg);
   background-position: top;
 }
 
