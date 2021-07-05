@@ -61,12 +61,14 @@ function togglePopup(name){
 // Refreshes the page so that pop ups can work. For some reason, going from 'home' to 'projects'
 // doesn't activate the pop ups unless the page is refreshed at least once.
 function ManualRefresh(){
+  /*
   if(!hasRefreshOnce) setInterval(() => {window.location.reload();}, 1000);
   hasRefreshOnce = true;
+  */
 }
 
 // Resets the form inputs
 function resetForm() {
-  setInterval(() => {document.getElementById("gform").reset();}, 1000); 
+  setInterval(() => {document.getElementById("gform").reset();}, 1000);
 
 }
