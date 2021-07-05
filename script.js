@@ -61,5 +61,4 @@ function togglePopup(name){
 // Resets the form inputs
 function resetForm() {
   setInterval(() => {document.getElementById("gform").reset();}, 1000);
-
 }
