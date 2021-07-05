@@ -64,3 +64,9 @@ function ManualRefresh(){
   if(!hasRefreshOnce) setInterval(() => {window.location.reload();}, 1000);
   hasRefreshOnce = true;
 }
+
+// Resets the form inputs
+function resetForm() {
+  setInterval(() => {document.getElementById("gform").reset();}, 1000); 
+
+}

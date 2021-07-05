@@ -331,3 +331,13 @@ html.is-leaving .transition-fade {
   transition:all 300ms ease-in-out;
   transform:translate(-50%,-50%) scale(1);
 }
+
+
+/* Form */
+label {
+  color: #66FCF1;
+}
+
+form {
+  text-align: center;
+}
