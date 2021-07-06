@@ -61,4 +61,10 @@ function togglePopup(name){
 // Resets the form inputs
 function resetForm() {
   setInterval(() => {document.getElementById("gform").reset();}, 1000);
+  toggleSubmitPopup();
+}
+
+// Submit pop up
+function toggleSubmitPopup(){
+  document.getElementById("popup-submit").classList.toggle("active");
 }

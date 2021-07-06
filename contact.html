@@ -26,12 +26,12 @@
       <div class="form">
         <form id="gform" name="gform" target="hidden_iframe" onsubmit="resetForm();" action="https://docs.google.com/forms/d/e/1FAIpQLSfNOBmiFL6IK0rXnLiI3LwR4HhlwOyKCH8Utyr13HnIRL7TtA/formResponse?">
           <label for="entry.1576125802">Name</label><br>
-          <input type="text" name="entry.1576125802" id="entry.1576125802" value="" placeholder="Your name" required><br>
+          <input type="text" name="entry.1576125802" id="entry.1576125802" value="" placeholder="Your name" required><br><br>
           <label for="entry.346831256">Email</label><br>
-          <input type="email" name="entry.346831256" id="entry.346831256" value="" placeholder="Your email"required><br>
+          <input type="email" name="entry.346831256" id="entry.346831256" value="" placeholder="Your email"required><br><br>
           <label for="entry.1335881214">Message</label><br>
-          <textarea name="entry.1335881214" id="entry.1335881214" rows="8" cols="50" placeholder="Your message" required></textarea><br>
-          <input type="submit" name="" value="submit">
+          <textarea name="entry.1335881214" id="entry.1335881214" rows="8" cols="50" placeholder="Your message" required></textarea><br><br>
+          <button type="submit" name="" value="submit" class="button1">Submit</button>
         </form>
       </div>
       <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
@@ -115,6 +115,14 @@
           <h3>Drum Machine</h1>
           <p>A drum machine that allows users to play a sound by either clicking on the buttons or using the keyboard. </p>
           <a target="_blank" href="https://github.com/koookee/Drum-Machine"><i class="fab fa-github fa-2x" style="color:black"></i></a>
+        </div>
+    </div>
+    <div class="popup" id="popup-submit">
+      <div class="overlay"></div>
+        <div class="content">
+          <div class="close-btn" onclick="toggleSubmitPopup()">×</div>
+          <h3>Message Received</h1>
+          <p>I'll respond as soon as possible!</p>
         </div>
     </div>
   </body>
