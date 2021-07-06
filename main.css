@@ -6,20 +6,19 @@ h1 {
   font-size: 80px; //modify this
 }
 
-h3 {
-  color: #66FCF1;
-}
-
 #HomeText {
   color: #F6DFEB;
   text-align: center;
 }
 
-h2 {
+#HomeHeader2 {
   text-align: center;
   color: #F6DFEB;
 }
 
+#PopUpHeader {
+  color: #66FCF1;
+}
 html {
   width: 100%;
   height: 100%;
@@ -329,7 +328,36 @@ html.is-leaving .transition-fade {
   transform:translate(-50%,-50%) scale(1);
 }
 
+/* ------ Resume ------ */
+.resume-header {
+  text-align: center;
+  color: #F6DFEB;
+}
 
+.resume-main {
+  color: #F6DFEB;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+#resume-section-title {
+  color: #66FCF1;
+}
+
+#resume-project-date {
+  text-align: right;
+  display: inline;
+  float: right;
+}
+
+#testingg {
+  display: inline;
+}
+
+#resume-link {
+  text-align: center;
+  background-color: #FFFFF0
+}
 /* ------ Contact ------ */
 label {
   color: #66FCF1;
@@ -339,7 +367,11 @@ form {
   text-align: center;
 }
 
-.button1 {
+textarea {
+font-family: helvetica;
+}
+
+.form-button {
   display: inline-block;
   color: #C5C6C7;
   font-weight: bold;
@@ -354,7 +386,7 @@ form {
   cursor: pointer;
   transition: all 300ms ease-in-out;
 }
-.button1:hover {
+.form-button:hover {
   background-color: #66FCF1;
   transition: all 300ms ease-in-out;
 }
