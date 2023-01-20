@@ -1,7 +1,7 @@
 const swup = new Swup()
 const hasRefreshOnce = false;
-const filterIDs = ["All", "JavaScript", "C#", "Java", "Python", "C"];
-const popupDictionary = {
+var filterIDs = ["All", "JavaScript", "C#", "Java", "Python", "C"];
+var popupDictionary = {
   "getStore" : "popup-0",
   "Pomodoro" : "popup-1",
   "PythonImageFilter" : "popup-2",
