@@ -6,11 +6,14 @@ var popupDictionary = {
   "Pomodoro" : "popup-1",
   "PythonImageFilter" : "popup-2",
   "Calculator" : "popup-3",
-  "DefendThePortal" : "popup-4",
+  "Monopoly" : "popup-4",
   "RandomQuoteGenerator" : "popup-5",
   "MarkdownPreviewer" : "popup-6",
-  "RoboChicken" : "popup-7",
-  "DrumMachine" : "popup-8"
+  "CSORT" : "popup-7",
+  "DrumMachine" : "popup-8",
+  "MSP432": "popup-9",
+  "RoboChicken" : "popup-10",
+  "DefendThePortal" : "popup-11"
 }
 
 // Project filter by programming language

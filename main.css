@@ -157,7 +157,7 @@ html.is-leaving .transition-fade {
   padding-top: 0.2em;
   display: grid;
   height: 100%;
-  grid-template-rows: repeat(10, 5em);
+  grid-template-rows: repeat(15, 5em);
   grid-template-columns: repeat(5, 1fr);
   grid-gap: 20px;
 }
@@ -212,6 +212,10 @@ html.is-leaving .transition-fade {
   background-size: 16em 16em;
 }
 
+#Monopoly{
+  background-image: url(Images/Monopoly.jpg);
+}
+
 #Pomodoro{
   background-image: url(Images/Pomodoro.jpg);
 }
@@ -247,6 +251,16 @@ html.is-leaving .transition-fade {
 
 #DrumMachine{
   background-image: url(Images/DrumMachine.jpg);
+}
+
+#MSP432{
+  background-image: url(Images/MSP432.jpg);
+  background-position: 80% 50%;
+}
+
+#CSORT{
+  background-image: url(Images/CSORT.jpg);
+  background-position: 0% 60%;
 }
 
 .portfolio-item:hover::before {
