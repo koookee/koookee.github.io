@@ -340,11 +340,11 @@ html.is-leaving .transition-fade {
   padding-right: 15px;
 }
 
-#resume-section-title {
+.resume-section-title {
   color: #66FCF1;
 }
 
-#resume-project-date {
+.resume-project-date {
   text-align: right;
   display: inline;
   float: right;

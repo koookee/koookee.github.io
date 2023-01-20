@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
+	<script src="jquery.js"></script>
+	<script>
+	$(function(){
+		$("#includedPopups").load("popups.html"); 
+    });
+	</script>
     <title>Projects</title>
   </head>
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -45,96 +51,6 @@
         </div>
       </div>
     </main>
-
-
-    <div class="popup" id="popup-0">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('getStore')">×</div>
-          <h3 id="PopUpHeader">Grocery Store</h3>
-          <p>A java store with a GUI that allows users to add and remove items from their cart, toggle the view of their cart, and checkout once they're done.</p>
-          <a target="_blank" href="https://github.com/hkkanwar/getStore-"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-1">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('Pomodoro')">×</div>
-          <h3 id="PopUpHeader">Pomodoro Timer</h3>
-          <p>A Pomodoro timer that alternates between a session and a break. A sound is played once the countdown is over. Users can adjust the duration of both the session and the break as well as pause and reset the timer.</p>
-          <a target="_blank" href="https://github.com/koookee/pomodoro-timer"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-2">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('PythonImageFilter')">×</div>
-          <h3 id="PopUpHeader">Image Filter</h3>
-          <p>An image filter program that prompts users to select an image and apply any desired filter(s). All the program commands are displayed in the shell. Once users are satisfied with the final image, they can save it locally and terminate the program.</p>
-          <a target="_blank" href="https://github.com/koookee/ImageFilter"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-3">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('Calculator')">×</div>
-          <h3 id="PopUpHeader">Calculator</h3>
-          <p>A javascript calculator with some basic opertions.</p>
-          <a target="_blank" href="https://github.com/koookee/Javascript-Calculator"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-4">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('DefendThePortal')">×</div>
-          <h3 id="PopUpHeader">Defend the Portal</h3>
-          <p>A unity game about a player whose objective is to defend a portal from waves of incoming enemies. Resources can be mined to craft weapons, ammo, armor, and special abilities to improve the player's combat. </p>
-          <a target="_blank" href="https://github.com/koookee/Defend-the-portal"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-5">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('RandomQuoteGenerator')">×</div>
-          <h3 id="PopUpHeader">Random Quote Generator</h3>
-          <p>A random quote generator that fetches data (the quotes) from an API. Users can tweet about a quote they liked.</p>
-          <a target="_blank" href="https://github.com/koookee/Random-Quote-Machine"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-6">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('MarkdownPreviewer')">×</div>
-          <h3 id="PopUpHeader">Markdown Previewer</h3>
-          <p>An easy to use markdown previewer built for users with little to no HTML experience.</p>
-          <a target="_blank" href="https://github.com/koookee/Markdown-previewer"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-7">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('RoboChicken')">×</div>
-          <h3 id="PopUpHeader">Robo Chicken</h3>
-          <p>A Unity game heavily inspired by Flappy Bird. The game mechanics are pretty similar, but I added some extra features (boss battle at the end, ammo, game speeds up as it progresses, etc.) to make things interesting. It was a great learning experience since it's my first unity project.</p>
-          <a target="_blank" href="https://github.com/koookee/Robo-chicken"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-8">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('DrumMachine')">×</div>
-          <h3 id="PopUpHeader">Drum Machine</h3>
-          <p>A drum machine that allows users to play a sound by either clicking on the buttons or using the keyboard. </p>
-          <a target="_blank" href="https://github.com/koookee/Drum-Machine"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-submit">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="toggleSubmitPopup()">×</div>
-          <h3 id="PopUpHeader">Message Received</h3>
-          <p>I'll respond as soon as possible!</p>
-        </div>
-    </div>
+    <div id="includedPopups"></div>
   </body>
 </html>

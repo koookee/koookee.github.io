@@ -4,6 +4,12 @@
     <meta charset="utf-8">
     <script defer src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
     <script defer src="script.js"></script>
+	<script src="jquery.js"></script>
+	<script>
+	$(function(){
+		$("#includedPopups").load("popups.html"); 
+    });
+	</script>
     <title>Resume</title>
   </head>
   <link rel="stylesheet" type="text/css" href="main.css">
@@ -25,164 +31,64 @@
     <main id="swup" class="transition-fade">
       <div class="resume-header">
         <h3>Ottawa, ON</h3>
+        <h3>+1 (343) 202-8545</h3>
         <h3>husseinelmokdad3770@gmail.com</h3>
         <h3>https://www.linkedin.com/in/husseinelmokdad/</h3>
         <h3>https://github.com/koookee</h3>
-        <a target="_blank" id="resume-link" href="Resume.docx"><i class="fas fa-file-word fa-2x" style="color:#4472C4;"></i></a>
       </div>
       <br>
       <div class="resume-main">
-        <h2 id="resume-section-title">EDUCATION</h2>
+        <h2 class="resume-section-title">Education</h2>
         <p>Bachelor of Engineering, Software Engineering, Co-op option</p>
         <p>Carleton University, Ottawa, ON</p>
         <ul>
-          <li>Third year standing, CGPA: 11.04/12.0 (A)</li>
+          <li>Third year standing, CGPA: 11.14/12.0 (A)</li>
           <li>Murdoch Maxwell MacOdrum Scholarship</li>
           <li>Expected graduation: April/2024</li>
           <li>Study range: September 2019 – April 2024</li>
         </ul>
-        <br>
-        <h2 id="resume-section-title">AVAILABILITY</h2>
-        <p>Available for 12 months beginning January 2022</p>
-        <br>
-        <h2 id="resume-section-title">RELEVANT SKILLS, EXPERIENCES AND ACCOMPLISHMENTS</h2>
+        <h2 class="resume-section-title">Availability</h2>
+        <p>Available for 4 months beginning May 2023</p>
+		<h2 class="resume-section-title">Skills</h2>
         <h3>Technical Skills</h3>
         <ul>
-          <li>Built a quote generator website using HTML, CSS, JavaScript, and React that displays random quotes received from an API and lets the user share them on Twitter</li>
-          <li>Developed a grocery store application using Java that allows users to add/remove items from		their shopping cart, toggle the display of the cart, and checkout</li>
-          <li>Programmed an image filter using Python that allows the user to select an image file, apply the desired filter and save the final image</li>
-          <li>Implemented Python with the RaspberryPi to create circuits with speed adjustable rotating	motors, timed LEDs, an LCD that displays the status of a program, and a buzzer with various frequencies</li>
+          <li>Calculated the subnet range of a newly configured ethernet interface, using C++, to check if it overlaps with the subnet range of other ethernet interfaces in the embedded system </li>
+          <li>Developed a sorting program in C by using multiple child processes that have access to the same shared memory in order to increase the algorithm’s speed through parallel computation </li>
+          <li>Controlled the state of an RGB LED by configuring and enabling interrupts and timers on the MSP432 controller using C, resulting in an efficient use of the CPU as opposed to polling</li>
+          <li>Programmed a RaspberryPi in Python to control different electronic components in a circuit such as DC motors, LEDs, LCDs, buzzers, etc.</li>
         </ul>
         <h3>Communication Skills</h3>
         <ul>
-          <li>Led a team of 4 and thoroughly communicated to team members the design procedure of an image manipulation program in Python</li>
-          <li>Documented the Python image filter program using a “ReadMe” file which provided users with instructions on how to use the program and additional resources in case any questions arise</li>
-          <li>Visualized a project’s design using UML diagrams which made it easier to understand as opposed to only looking at the code</li>
-          <li>Fluent in English and Arabic: oral, written, reading</li>
+          <li>Cooperated with team members on a project to discuss which tasks to take on and the approach for implementing the chosen design pattern</li>
+          <li>Documented a program using a "ReadMe" file which provided users with instructions on how to use the program and additional resources such as contact information</li>
+          <li>Illustrated the different views of a system by creating UML diagrams (class, use case, sequence, etc.) that improve understandability and guide the development process</li>
         </ul>
-        <br>
-        <h2 id="resume-section-title">APPLIED PROJECTS</h2>
-        <h3 style="display:inline">Team member/Programmer</h3><h3 id="resume-project-date">Winter 2021</h3>
+		<h2 class="resume-section-title">Work Experience</h2>
+        <h3 style="display:inline">Embedded Test Automation and Software Developer</h3><h3 class="resume-project-date">January 2022 - December 2022</h3>
+        <h3>Ross Video, Ottawa, ON</h3>
+        <ul>
+          <li>Investigated a customer’s audio streaming bug by analyzing board logs and looking into the C++ ZeroMQ Socket API to provide my team with information on what’s causing the bug and potential fixes that can address the issue</li>
+		  <li>Created design documents to propose new feature or performance related changes, receive feedback from team members on the design approach, and document my implementation</li>
+		  <li>Automated manual regression tests by using Python and Selenium WebDriver to improve speed and accuracy while also adding the option to run the tests on other products</li>
+		  <li>Revamped the design of loading content onto the WebUI, using JS and HTML, making the WebUI more responsiveness and eliminating the loading time when moving between sub-pages</li>
+		  <li>Wrote a script that used the scp command to transfer WebUI files from the Linux virtual machine to the board, skipping the process of making a new firmware build and boosting my workflow’s efficiency</li>
+		  <li>Improved the UI/UX of the WebUI by reorganizing the layout of different menus, utilizing cookies to remember user preferences, and adding a toggle switch for different color schemes</li>
+		  <li>Prototyped and implemented a wizard setup page in the WebUI allowing users to quickly configure their boards and test out transmitting/receiving audio streams</li>
+        </ul>
+        <h2 class="resume-section-title">Applied Project</h2>
+        <h3 style="display:inline">Team member/Programmer</h3><h3 class="resume-project-date">January 2021 – April 2021</h3>
         <h3>Grocery Store Application Project</h3>
         <ul>
-          <li>Collaborated as a team to decide on the suitable design approach (whether to focus more on composition or inheritance) for the project and the appropriate data structures such as ArrayLists and HashMaps</li>
-          <li>Proposed different GUI layouts via quick sketches to come up with an intuitive design that’s user friendly</li>
-          <li>Applied the bottom-up approach to construct the program since it allowed us to start testing promptly</li>
-          <li>Coded the test suite for the program using Junit and included a diverse set of inputs to address any corner cases within the methods</li>
-          <li>Detailed the functionality of the methods in a report and explained the approach that we took for designing the program</li>
-          <li>Visualized and detailed the contents of the classes within the program using UML diagrams</li>
-        </ul>
-        <br>
-        <h3 style="display:inline">Team leader/Programmer</h3><h3 id="resume-project-date">Winter 2020</h3>
-        <h3>Image filter project</h3>
-        <ul>
-          <li>Brainstormed the program’s structure with team members and decided on the most efficient way of tackling the project objective</li>
-          <li>Delegated the workload equally among team members and agreed on a means of communication for all team members to stay in touch should any issues arise</li>
-          <li>Tested the program rigorously using various techniques such as test functions with expected values and actual values to ensure the code did not contain any hidden bugs</li>
-          <li>Documented the program’s functionality and user instructions in a “ReadMe” file to make the process of using the program easier for non-technical users</li>
-          <li>Assisted and gave programming specific advice to team members facing issues with writing some of the program’s functions</li>
-        </ul>
-        <br>
-        <h3 style="display:inline">Team member/Programmer</h3><h3 id="resume-project-date">Winter 2020</h3>
-        <h3>RaspberryPi project</h3>
-        <ul>
-          <li>Assembled the circuit which connected the DC motor, LCD, jumper wires, and button on the breadboard to the RaspeberryPi</li>
-          <li>Wrote the Python script that managed the DC motor’s rotation speed and direction, and displayed the information on the LCD</li>
-          <li>Discussed the findings of the project in the report conclusion </li>
+          <li>Collaborated as a team to decide on the suitable design approach (whether to mainly utilize composition or inheritance) for the project and the appropriate data structures such as ArrayLists and HashMaps</li>
+          <li>Visualized the relationship between different classes using UML class diagrams</li>
+          <li>Proposed different GUI layouts to come up with an intuitive user-friendly design</li>
+          <li>Applied the bottom-up approach to developing the program which allowed us to begin testing at an early stage</li>
+          <li>Coded the test suite for the program using Junit and included a diverse set of inputs to address any corner cases</li>
+		  <li>Detailed the functionality of the methods in a report and explained the design approach that we went with for the program</li>
         </ul>
       </div>
       <br>
     </main>
-
-
-    <div class="popup" id="popup-0">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('getStore')">×</div>
-          <h3 id="PopUpHeader">Grocery Store</h3>
-          <p>A java store with a GUI that allows users to add and remove items from their cart, toggle the view of their cart, and checkout once they're done.</p>
-          <a target="_blank" href="https://github.com/hkkanwar/getStore-"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-1">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('Pomodoro')">×</div>
-          <h3 id="PopUpHeader">Pomodoro Timer</h3>
-          <p>A Pomodoro timer that alternates between a session and a break. A sound is played once the countdown is over. Users can adjust the duration of both the session and the break as well as pause and reset the timer.</p>
-          <a target="_blank" href="https://github.com/koookee/pomodoro-timer"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-2">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('PythonImageFilter')">×</div>
-          <h3 id="PopUpHeader">Image Filter</h3>
-          <p>An image filter program that prompts users to select an image and apply any desired filter(s). All the program commands are displayed in the shell. Once users are satisfied with the final image, they can save it locally and terminate the program.</p>
-          <a target="_blank" href="https://github.com/koookee/ImageFilter"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-3">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('Calculator')">×</div>
-          <h3 id="PopUpHeader">Calculator</h3>
-          <p>A javascript calculator with some basic opertions.</p>
-          <a target="_blank" href="https://github.com/koookee/Javascript-Calculator"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-4">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('DefendThePortal')">×</div>
-          <h3 id="PopUpHeader">Defend the Portal</h3>
-          <p>A unity game about a player whose objective is to defend a portal from waves of incoming enemies. Resources can be mined to craft weapons, ammo, armor, and special abilities to improve the player's combat. </p>
-          <a target="_blank" href="https://github.com/koookee/Defend-the-portal"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-5">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('RandomQuoteGenerator')">×</div>
-          <h3 id="PopUpHeader">Random Quote Generator</h3>
-          <p>A random quote generator that fetches data (the quotes) from an API. Users can tweet about a quote they liked.</p>
-          <a target="_blank" href="https://github.com/koookee/Random-Quote-Machine"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-6">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('MarkdownPreviewer')">×</div>
-          <h3 id="PopUpHeader">Markdown Previewer</h3>
-          <p>An easy to use markdown previewer built for users with little to no HTML experience.</p>
-          <a target="_blank" href="https://github.com/koookee/Markdown-previewer"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-7">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('RoboChicken')">×</div>
-          <h3 id="PopUpHeader">Robo Chicken</h3>
-          <p>A Unity game heavily inspired by Flappy Bird. The game mechanics are pretty similar, but I added some extra features (boss battle at the end, ammo, game speeds up as it progresses, etc.) to make things interesting. It was a great learning experience since it's my first unity project.</p>
-          <a target="_blank" href="https://github.com/koookee/Robo-chicken"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-8">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="togglePopup('DrumMachine')">×</div>
-          <h3 id="PopUpHeader">Drum Machine</h3>
-          <p>A drum machine that allows users to play a sound by either clicking on the buttons or using the keyboard. </p>
-          <a target="_blank" href="https://github.com/koookee/Drum-Machine"><i class="fab fa-github fa-2x" style="color:black"></i></a>
-        </div>
-    </div>
-    <div class="popup" id="popup-submit">
-      <div class="overlay"></div>
-        <div class="content">
-          <div class="close-btn" onclick="toggleSubmitPopup()">×</div>
-          <h3 id="PopUpHeader">Message Received</h3>
-          <p>I'll respond as soon as possible!</p>
-        </div>
-    </div>
+	<div id="includedPopups"></div>
   </body>
 </html>
