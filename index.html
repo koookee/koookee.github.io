@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <script defer src="Swup.umd.js"></script>
-    <script defer src="script.js"></script>
-	<script defer src="jquery-3.6.3.min.js"></script>
-	<script>
-	$(function(){
-		$("#includedPopups").load("popups.html"); 
-    });
-	</script>
-    <title>Hussein's Website</title>
-  </head>
-  <link rel="stylesheet" type="text/css" href="main.css">
-  <link rel="stylesheet" href="all.min.css">
-  <header>
-    <div class="container">
-        <h1 class="logo"></h1>
-        <nav>
-          <ul>
-            <li><a href="/index.html">Home</a></li>
-            <li><a href="/projects.html">Projects</a></li>
-            <li><a href="/resume.html">Resume</a></li>
-            <li><a href="/contact.html">Contact</a></li>
-          </ul>
-        </nav>
-      </div>
-  </header>
-  <body>
-    <main id="swup" class="transition-fade">
-      <h2 id="HomeHeader2">Hey there! I'm</h2>
-      <h1>Hussein El Mokdad</h1>
-      <p id="HomeText">I'm a third year software engineering student at Carleton University.</p>
-    </main>
-	<div id="includedPopups"></div>
-  </body>
+	<head>
+		<meta charset="utf-8">
+		<script defer src="Swup.umd.js"></script>
+		<script defer src="script.js"></script>
+		<script src="jquery-3.6.3.min.js"></script>
+		<script>
+		$(function(){
+			$("#includedPopups").load("popups.html"); 
+		});
+		</script>
+		<title>Hussein's Website</title>
+		<link rel="icon" type="image/x-icon" href="/Images/favicon.svg">
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<link rel="stylesheet" href="all.min.css">
+	</head>
+	<body>
+		<header>
+			<div class="container">
+				<h1 class="logo"></h1>
+				<nav>
+					<ul>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/projects.html">Projects</a></li>
+						<li><a href="/resume.html">Resume</a></li>
+						<li><a href="/contact.html">Contact</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<main id="swup" class="transition-fade">
+			<h2 id="HomeHeader2">Hey there! I'm</h2>
+			<h1>Hussein El Mokdad</h1>
+			<p id="HomeText">I'm a third year software engineering student at Carleton University.</p>
+		</main>
+		<div id="includedPopups"></div>
+	</body>
 </html>
