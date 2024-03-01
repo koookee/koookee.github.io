@@ -342,36 +342,6 @@ html.is-leaving .transition-fade {
   transform:translate(-50%,-50%) scale(1);
 }
 
-/* ------ Resume ------ */
-.resume-header {
-  text-align: center;
-  color: #F6DFEB;
-}
-
-.resume-main {
-  color: #F6DFEB;
-  padding-left: 15px;
-  padding-right: 15px;
-}
-
-.resume-section-title {
-  color: #66FCF1;
-}
-
-.resume-project-date {
-  text-align: right;
-  display: inline;
-  float: right;
-}
-
-#testingg {
-  display: inline;
-}
-
-#resume-link {
-  text-align: center;
-  background-color: #FFFFF0
-}
 /* ------ Contact ------ */
 label {
   color: #66FCF1;
